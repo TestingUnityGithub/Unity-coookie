@@ -3,13 +3,15 @@ using System.Collections;
 
 public class HelloWorld : MonoBehaviour {
 
-	// Use this for initialization
+
 	void Start () {
-	
+		public GameObject cube;
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
 		transform.Translate (Vector3.left);
+		Debug.Log ("Nitin");
+		cube.transform.localEulerangles (0, 8, 0);
 	}
 }
