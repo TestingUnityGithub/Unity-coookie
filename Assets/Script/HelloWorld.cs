@@ -7,7 +7,7 @@ public class HelloWorld : MonoBehaviour
 
 	void Start () 
 	{
-		Invoke ("PingPong");
+		Invoke ("PingPong",1.0f);
 	}
 	
 	void Update () 
