@@ -2,16 +2,16 @@
 using System.Collections;
 
 public class HelloWorld : MonoBehaviour {
-
+	public GameObject cube;
 
 	void Start () {
-		public GameObject cube;
+
 	}
 	
 
 	void Update () {
 		transform.Translate (Vector3.left);
 		Debug.Log ("Nitin");
-		cube.transform.localEulerangles (0, 8, 0);
+		//cube.transform.localEulerAngles (0, 8, 0);
 	}
 }
