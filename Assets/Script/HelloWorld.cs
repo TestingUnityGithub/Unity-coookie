@@ -1,21 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HelloWorld : MonoBehaviour {
-
+public class HelloWorld : MonoBehaviour 
+{
 	public GameObject cube;
 
- 
-	void Start () {
-
+	void Start () 
+	{
+		Invoke ("PingPong");
 	}
 	
-
-	void Update () {
+	void Update () 
+	{
 		transform.Translate (Vector3.left);
 		Debug.Log ("Nitin");
- 
-		//cube.transform.localEulerangles (0, 8, 0);
+	}
 
+	void PingPong()
+	{
+		PlayerPrefs.SetInt ("Hello World value ", 1);
 	}
 }
